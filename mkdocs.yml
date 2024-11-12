@@ -1,0 +1,23 @@
+site_name: Sebrae Docs
+site_description: "Documentação oficial dos projetos do Sebrae"
+site_author: "Rodrigo Lacan"
+
+nav:
+  - Home: index.md
+  - Jenkins: jenkins.md
+
+theme:
+  name: material
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.indexes
+
+  palette:
+    scheme: auto
+    toggle:
+      icon: material/weather-night
+      name: Mudar para modo escuro
+    font:
+      text: "Roboto"
+      code: "Fira Code"
