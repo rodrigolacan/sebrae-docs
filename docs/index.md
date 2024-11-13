@@ -1,6 +1,6 @@
-# Sobre a Wiki de Tecnologia - Sebrae RR
+# Wiki de Tecnologia - Sebrae RR
 
-![Logo do Sebrae](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Sebrae_logo.svg/1200px-Sebrae_logo.svg.png)
+![Logo do Sebrae](resources/logo/logo_sebrae.png)
 
 ## Bem-vindo à Wiki de Documentação Tecnológica do Sebrae RR
 
@@ -8,22 +8,12 @@ Este site foi desenvolvido para servir como uma wiki com documentações detalha
 
 ### Objetivo da Wiki
 
-Esta wiki tem como objetivo ser uma referência prática e acessível para novos analistas, desenvolvedores e colaboradores que desejam entender melhor as tecnologias que sustentam os serviços do Sebrae RR. Ao centralizar essas documentações, facilitamos o acesso e a compreensão dos processos e das ferramentas utilizadas, promovendo a continuidade e a eficiência nos nossos projetos de tecnologia.
+Esta wiki tem como objetivo ser uma referência prática e acessível para todos os analistas, desenvolvedores e colaboradores que desejam entender melhor as tecnologias que sustentam os serviços do Sebrae RR. Promovendo a continuidade e a eficiência nos nossos projetos de tecnologia.
 
-> "Compartilhamos conhecimento e aprimoramos a gestão de nossas ferramentas para promover um ambiente de trabalho colaborativo e tecnológico."
+> **Isaac Newton**  
+> "Se vi mais longe, foi por estar sobre ombros de gigantes."
 
-## Ferramentas e Projetos Documentados
-
-Aqui você encontrará guias e tutoriais sobre várias ferramentas e projetos, incluindo:
-
-- **Jenkins**: Configuração e gerenciamento de pipelines de integração contínua (CI) para automatizar a entrega de software.
-- **ArgoCD**: Implementação de fluxos GitOps para gerenciar e sincronizar aplicações com Kubernetes.
-- **Harbor**: Administração e segurança de imagens de contêineres com nosso repositório de imagens Docker.
-- **Kubernetes**: Estrutura de orquestração de contêineres, com documentações para configuração de clusters, deploy de aplicações e boas práticas.
-
-Além dessas ferramentas principais, outros projetos e iniciativas de infraestrutura e automação também são detalhados, proporcionando uma visão completa do ecossistema tecnológico do Sebrae RR.
-
-## Para Quem Esta Wiki Foi Feita
+## Para quem esta Wiki foi feita
 
 Este site é ideal para:
 
@@ -33,12 +23,14 @@ Este site é ideal para:
 
 ### Estrutura das Documentações
 
-Cada ferramenta ou projeto possui uma seção própria nesta wiki, onde você encontrará:
+A maioria das ferramentas ou projetos possuem uma seção própria nesta wiki, onde você encontrará:
 
-- **Configuração Inicial**: Instruções detalhadas para instalação e configuração de cada ferramenta.
+- **Informações sobre a ferramenta**: Um breve detalhamento sobre a função da ferramenta no nosso ambiente.
+- **Configuração do Ambiente**: Instruções detalhadas para instalação e configuração de cada ferramenta.
 - **Casos de Uso**: Exemplos práticos de como aplicamos cada tecnologia em nosso ambiente.
 - **Boas Práticas**: Diretrizes para uma implementação segura e eficiente, com base nas experiências da nossa equipe.
 - **Soluções de Problemas Comuns**: Um guia de solução de problemas para agilizar a resolução de desafios técnicos.
+- **Notas/Observações**: Notas técnicas ou observações importantes sobre cada ferramenta.
 
 ## Como Contribuir
 
@@ -51,7 +43,7 @@ Para colaboradores que desejam contribuir com a atualização ou adição de nov
 Caso precise de mais informações ou tenha dúvidas sobre as documentações, entre em contato com a equipe UTIC do Sebrae RR:
 
 - 📧 E-mail: utic@rr.sebrae.com.br
-- 🌐 Website: [rr.sebrae.com.br](https://www.rr.sebrae.com.br)
+- 🌐 Website: [Portal de negócios sebrae](https://portaldenegociosebrae.com.br/home)
 
 ---
 
