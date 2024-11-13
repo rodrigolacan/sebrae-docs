@@ -4,20 +4,45 @@ site_author: "Rodrigo Lacan"
 
 nav:
   - Home: index.md
-  - Jenkins: jenkins.md
+  - Devops:
+      - Jenkins:
+          - Configuração inicial: devops/configuracoes.md
+          - Pipelines: devops/pipeline-facilita.md
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/gitlab
+
   features:
     - navigation.top
     - navigation.tabs
     - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
 
   palette:
-    scheme: auto
-    toggle:
-      icon: material/weather-night
-      name: Mudar para modo escuro
-    font:
-      text: "Roboto"
-      code: "Fira Code"
+    scheme: material
+    primary: indigo
+    color_mode: false
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.emoji
+  - pymdownx.caret
+  - pymdownx.arithmatex
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+  - codehilite
+  - pymdownx.superfences
+
+copyright: Copyright &copy; 2024 Sebrae RR
+repo_url: https://github.com/rodrigolacan
+
+extra:
+  search:
+    language: "pt"
