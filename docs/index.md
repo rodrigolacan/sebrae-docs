@@ -23,11 +23,10 @@ Este site é ideal para:
 
 ### Estrutura das Documentações
 
-A maioria das ferramentas ou projetos possuem uma seção própria nesta wiki, onde você encontrará:
+As documentações seguem uma estrutura comum, sendo adicionado especificidades conforme a necessidade
 
 - **Informações sobre a ferramenta**: Um breve detalhamento sobre a função da ferramenta no nosso ambiente.
 - **Configuração do Ambiente**: Instruções detalhadas para instalação e configuração de cada ferramenta.
-- **Casos de Uso**: Exemplos práticos de como aplicamos cada tecnologia em nosso ambiente.
 - **Boas Práticas**: Diretrizes para uma implementação segura e eficiente, com base nas experiências da nossa equipe.
 - **Soluções de Problemas Comuns**: Um guia de solução de problemas para agilizar a resolução de desafios técnicos.
 - **Notas/Observações**: Notas técnicas ou observações importantes sobre cada ferramenta.
