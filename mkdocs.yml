@@ -13,8 +13,7 @@ nav:
 
 theme:
   name: material
-  icon:
-    repo: fontawesome/brands/gitlab
+  icon: "fa"
 
   features:
     - navigation.top
@@ -24,21 +23,25 @@ theme:
     - content.code.annotate
 
   palette:
-    scheme: material
-    primary: indigo
-    color_mode: false
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
 
 markdown_extensions:
   - toc:
       permalink: true
+  - attr_list
   - admonition
   - pymdownx.tabbed
   - pymdownx.highlight
-  - pymdownx.emoji
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.caret
   - pymdownx.arithmatex
   - pymdownx.magiclink
   - pymdownx.tasklist
+  - pymdownx.details
   - codehilite
   - pymdownx.superfences
 
