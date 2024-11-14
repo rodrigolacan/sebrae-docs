@@ -6,6 +6,8 @@ WORKDIR /app
 
 # Instale o MkDocs e o tema Material
 RUN pip install mkdocs mkdocs-material
+RUN pip install mkdocs-git-revision-date-plugin
+
 
 # Copie os arquivos do projeto MkDocs para o diretório de trabalho
 COPY . /app
