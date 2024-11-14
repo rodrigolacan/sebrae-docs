@@ -4,9 +4,10 @@ FROM python:3.9-slim
 # Defina o diretório de trabalho
 WORKDIR /app
 
-# Instale o MkDocs e o tema Material
+# Instale o MkDocs e dependências
 RUN pip install mkdocs mkdocs-material
 RUN pip install mkdocs-git-revision-date-plugin
+RUN apt-get update && apt-get install -y git && apt-get clean
 
 
 # Copie os arquivos do projeto MkDocs para o diretório de trabalho
