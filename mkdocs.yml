@@ -27,10 +27,16 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
 
+plugins:
+  - search
+  - git-revision-date:
+
 markdown_extensions:
   - toc:
       permalink: true
   - attr_list
+  - md_in_html
+  - pymdownx.snippets
   - admonition
   - pymdownx.tabbed
   - pymdownx.highlight
