@@ -10,6 +10,8 @@ nav:
           - Configuração do Ambiente: devops/jenkins/2_configuracao-ambiente.md
           - Soluções de Problemas Comuns: devops/jenkins/3_solucoes-problemas.md
           - Notas e Observações: devops/jenkins/4_notas.md
+          - Pipelines: 
+            - Conectabiz Homologação: devops/jenkins/pipelines/conectabiz_homolog.md
 
 theme:
   name: material
