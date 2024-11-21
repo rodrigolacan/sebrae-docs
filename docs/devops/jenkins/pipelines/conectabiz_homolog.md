@@ -21,29 +21,29 @@ Essas etapas são organizadas de forma sequencial ou paralela, permitindo que os
 ## **Etapas**
 ![pipeline_conectabiz_homolog](../../../resources/jenkins/pipeline_conectabiz_homolog.png)
 
-# Jenkins Pipeline: Explicação das Etapas
+### Jenkins Pipeline: Explicação das Etapas
 
 Este pipeline foi configurado para realizar o build, push de uma imagem Docker para o Harbor, marcar versões de imagens com labels específicas e realizar atualizações no ArgoCD. Abaixo estão as etapas (**stages**) detalhadas:
 
-## 1. **Validando parâmetros**
+#### 1. **Validando parâmetros**
    - **Objetivo**: Garantir que os parâmetros necessários, como as tags do Docker (`NEW_DOCKER_TAG` e `OLD_DOCKER_TAG`), estejam corretos.
    - **Verificação**: O pipeline verifica se a tag da nova imagem segue o formato de versão semântico (por exemplo, `v1.0.0`).
 
-## 2. **Clonando Repositório**
+#### 2. **Clonando Repositório**
    - **Objetivo**: Clonar o repositório Git necessário para o pipeline.
    - **Comando**:
      ```bash
      git clone -b dev <repositório>
      ```
 
-## 3. **Instalando Dependências**
+#### 3. **Instalando Dependências**
    - **Objetivo**: Instalar as dependências do projeto.
    - **Comando**:
      ```bash
      composer install
      ```
 
-## 4. **Testes PHP UNIT**
+#### 4. **Testes PHP UNIT**
    - **Objetivo**: Executar os testes automatizados do projeto para garantir que o código está funcionando corretamente.
    - **Comando**:
      ```bash
@@ -51,7 +51,7 @@ Este pipeline foi configurado para realizar o build, push de uma imagem Docker p
      ```
      > **Nota**: Se os testes falharem, o pipeline falha automaticamente.
 
-## 5. **Realizando push da imagem Docker**
+#### 5. **Realizando push da imagem Docker**
    - **Objetivo**: Criar, marcar e empurrar a imagem Docker para o Harbor.
    - **Comandos**:
      1. Cria uma nova imagem Docker com a tag fornecida:
@@ -70,7 +70,7 @@ Este pipeline foi configurado para realizar o build, push de uma imagem Docker p
    - **Labels**:
      - Se a tag antiga (`OLD_DOCKER_TAG`) for fornecida, marca a imagem antiga como "Deprecated" no Harbor e a nova como "Last Stable Version".
 
-## 6. **Alterar versão da imagem no ArgoCD**
+#### 6. **Alterar versão da imagem no ArgoCD**
    - **Objetivo**: Atualizar o arquivo de configuração do ArgoCD com a nova versão da imagem Docker.
    - **Comandos**:
      1. Clona o repositório de configuração do ArgoCD:
@@ -89,7 +89,7 @@ Este pipeline foi configurado para realizar o build, push de uma imagem Docker p
         git push origin main
         ```
 
-## 7. **Sincronizando application no Kubernetes**
+#### 7. **Sincronizando application no Kubernetes**
    - **Objetivo**: Sincronizar a aplicação no ArgoCD e Kubernetes.
    - **Comandos**:
      1. Faz login no ArgoCD utilizando credenciais armazenadas:
